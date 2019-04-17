@@ -7,7 +7,6 @@ class Hero
     @power = power
     @biography = biography
     @@all << self
-    binding.pry
   end
 
 end
