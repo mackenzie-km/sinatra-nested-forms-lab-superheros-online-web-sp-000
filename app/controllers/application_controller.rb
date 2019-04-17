@@ -9,7 +9,6 @@ class App < Sinatra::Base
     end
 
     post '/teams' do
-      binding.pry
       @team = Team.new(params[:team][:name], params[:team][:motto], params[:team][:heroes])
       @heroes = []
       Team.all.collect do |line|
