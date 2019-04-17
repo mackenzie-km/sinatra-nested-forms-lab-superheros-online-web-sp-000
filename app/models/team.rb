@@ -2,7 +2,7 @@ class Team
   attr_accessor :name, :motto
   @@all = []
 
-  def initialize(name: name, motto: motto)
+  def initialize(name, motto)
     @name = name
     @motto = motto
     @@all << self
