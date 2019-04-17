@@ -6,6 +6,5 @@ class Team
     @name = name
     @motto = motto
     @@all << self
-    binding.pry
   end
 end
