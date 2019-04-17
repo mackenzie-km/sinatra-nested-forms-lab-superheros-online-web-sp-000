@@ -2,7 +2,7 @@ class Hero
   attr_accessor :name, :power, :biography
   @@all = []
 
-  def initialize(name: name, power: power, biography: biography)
+  def initialize(name, power, biography)
     @name = name
     @power = power
     @biography = biography
