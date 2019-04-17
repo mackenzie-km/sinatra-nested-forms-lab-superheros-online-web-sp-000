@@ -6,10 +6,10 @@ class App < Sinatra::Base
 
     get '/' do
       erb :index
-      binding.pry
     end
 
     post '/teams' do
+      binding.pry
       Team.new(params[:team][:name], params[:team][:motto])
       Hero.new(params[:team][:hero][:name], params[:team][:hero][:power], params[:team][:hero][:biography])
       erb :team
