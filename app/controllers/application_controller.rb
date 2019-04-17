@@ -14,8 +14,8 @@ class App < Sinatra::Base
       @heroes = []
       Team.all.collect do |line|
         line.heroes.collect do |hero|
-          Hero.new(hero[:name], hero[:power], hero[:biography])
-          @heroes << self
+          new_hero = Hero.new(hero[:name], hero[:power], hero[:biography])
+          @heroes << new_hero
         end
       end
       erb :team
