@@ -1,10 +1,10 @@
 <form action="/teams" method="post">
   <h1>Create a Team and Heroes!</h1>
   <label for="team_name">Team Name:</label>
-  <input type="text" id="team_name" name="team[name]">
+  <input type="text" id="team[name]" name="team[name]">
   <br>
   <label for="team_name">Team Motto:</label>
-  <input type="text" id="team_motto" name="team[motto]">
+  <input type="text" id="team[motto]" name="team[motto]">
   <br>
   <h2>Hero 1</h2>
   <label for="member1_name">Hero's Name:</label>
@@ -37,3 +37,15 @@
   <br>
   <input type="submit" id="submit">
 </form>
+
+fill_in("team[name]", :with => "Team Ruby")
+fill_in("team[motto]", :with => "We love Ruby!")
+fill_in("member1_name", :with => "Amanda")
+fill_in("member1_power", :with => "Ruby")
+fill_in("member1_bio", :with => "I love Ruby!")
+fill_in("member2_name", :with => "Arel")
+fill_in("member2_power", :with => "JavaScript")
+fill_in("member2_bio", :with => "I love JavaScript!")
+fill_in("member3_name", :with => "Katie")
+fill_in("member3_power", :with => "Sinatra")
+fill_in("member3_bio", :with => "I love Sinatra!")
